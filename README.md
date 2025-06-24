@@ -302,4 +302,4 @@ Based on [Material Design Color System](https://m2.material.io/design/color/), o
 ## 📜 License
 
 This project is licensed under the MIT License - see the
-[LICENSE](https://github.com/adriankarlen/neobrutal-zebar/blob/main/LICENSE) file
+[LICENSE](LICENSE) file
