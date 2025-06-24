@@ -1,0 +1,181 @@
+[
+  {
+    "iconName": "ti-terminal-2",
+    "appNames": ["alacritty", "wezterm", "wezterm-gui", "windowsterminal", "wt"]
+  },
+  {
+    "iconName": "ti-brand-vscode",
+    "appNames": ["code"]
+  },
+  {
+    "iconName": "ti-brand-visual-studio",
+    "appNames": ["devenv"]
+  },
+  {
+    "iconName": "ti-brand-teams",
+    "appNames": ["ms-teams"]
+  },
+  {
+    "iconName": "ti-mail",
+    "appNames": ["airmail", "olk"]
+  },
+  {
+    "iconName": "ti-brand-arc",
+    "appNames": ["arc"]
+  },
+  {
+    "iconName": "ti-brand-chrome",
+    "appNames": ["chrome", "chromium", "thorium"]
+  },
+  {
+    "iconName": "ti-brand-firefox",
+    "appNames": ["firefox"]
+  },
+  {
+    "iconName": "ti-circle-letter-z",
+    "appNames": ["zen"]
+  },
+  {
+    "iconName": "ti-brand-edge",
+    "appNames": ["msedge"]
+  },
+  {
+    "iconName": "ti-brand-discord",
+    "appNames": ["discord"]
+  },
+  {
+    "iconName": "ti-brand-spotify",
+    "appNames": ["spotify"]
+  },
+  {
+    "iconName": "ti-spy",
+    "appNames": [
+      "azure vpn client",
+      "AutoHotkey Window Spy",
+      "ProtonVPN",
+      "clash-verge"
+    ]
+  },
+  {
+    "iconName": "ti-screenshot",
+    "appNames": ["snippingtool"]
+  },
+  {
+    "iconName": "ti-settings",
+    "appNames": ["control panel", "settings", "FanControl"]
+  },
+  {
+    "iconName": "ti-folder",
+    "appNames": ["explorer", "dopus"]
+  },
+  {
+    "iconName": "ti-photo",
+    "appNames": ["photos"]
+  },
+  {
+    "iconName": "ti-headphones",
+    "appNames": ["sound"]
+  },
+  {
+    "iconName": "ti-file-spreadsheet",
+    "appNames": ["excel"]
+  },
+  {
+    "iconName": "ti-note",
+    "appNames": ["onenote"]
+  },
+  {
+    "iconName": "ti-presentation",
+    "appNames": ["powerpnt"]
+  },
+  {
+    "iconName": "ti-file-word",
+    "appNames": ["winword"]
+  },
+  {
+    "iconName": "ti-palette",
+    "appNames": ["mspaint"]
+  },
+  {
+    "iconName": "ti-palette",
+    "appNames": ["CLIP STUDIO PAINT", "CLIP STUDIO"]
+  },
+  {
+    "iconName": "ti-brand-steam",
+    "appNames": ["steam"]
+  },
+  {
+    "iconName": "hexagon-letter-v",
+    "appNames": ["neovide", "gvim"]
+  },
+  {
+    "iconName": "ti-brand-docker",
+    "appNames": ["Docker Desktop"]
+  },
+  {
+    "iconName": "ti-brand-kotlin",
+    "appNames": [
+      "clion64",
+      "idea64",
+      "pycharm64",
+      "webstorm64",
+      "goland64",
+      "rider64",
+      "rustrover64"
+    ]
+  },
+  {
+    "iconName": "ti-brand-telegram",
+    "appNames": ["telegram", "unigram"]
+  },
+  {
+    "iconName": "ti-brand-wechat",
+    "appNames": ["WeChat"]
+  },
+  {
+    "iconName": "ti-brand-qq",
+    "appNames": ["QQ"]
+  },
+  {
+    "iconName": "ti-brand-xbox",
+    "appNames": ["Xbox"]
+  },
+  {
+    "iconName": "ti-check",
+    "appNames": ["Microsoft To Do"]
+  },
+  {
+    "iconName": "ti-music",
+    "appNames": ["Media Player", "AppleMusic", "Cider"]
+  },
+  {
+    "iconName": "ti-markdown",
+    "appNames": ["Typora"]
+  },
+  {
+    "iconName": "ti-notebook",
+    "appNames": ["Obsidian", "zotero"]
+  },
+  {
+    "iconName": "ti-file-type-pdf",
+    "appNames": ["SumatraPDF", "Acrobat Reader", "Foxit Reader", "sioyek"]
+  },
+  {
+    "iconName": "ti-file-zip",
+    "appNames": ["7zFM", "WinRAR", "WinZip", "bandizip"]
+  },
+  {
+    "iconName": "ti-brand-android",
+    "appNames": ["MuMuPlayer"]
+  },
+  {
+    "iconName": "ti-brand-opera",
+    "appNames": [
+      "Opera",
+      "opera",
+      "Opera GX",
+      "opera gx",
+      "Opera Internet Browser"
+    ]
+  }
+]
