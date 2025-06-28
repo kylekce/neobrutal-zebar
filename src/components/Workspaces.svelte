@@ -37,7 +37,6 @@
           glazewm!.runCommand(`focus --workspace ${workspace.name}`)}
       />
     {/each}
-    <!-- Add workspace button -->
     <button
       aria-label="add-workspace"
       class="text-zb-add-workspace"
