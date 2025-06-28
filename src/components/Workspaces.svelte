@@ -24,7 +24,7 @@
     return entry?.iconName ?? "ti-background";
   };
 
-  let { glazewm } : { glazewm: GlazeWmOutput}= $props()
+  let { glazewm }: { glazewm: GlazeWmOutput } = $props();
 </script>
 
 {#if glazewm}
@@ -40,7 +40,10 @@
     <button
       aria-label="add-workspace"
       class="text-zb-add-workspace"
-      onclick={() => glazewm!.runCommand("wm-add-workspace")}
+      onclick={() =>
+        glazewm!.runCommand(
+          `focus --workspace ${glazewm.currentWorkspaces.length + 1}`
+        )}
     >
       <i class="ti ti-plus"></i>
     </button>
@@ -53,17 +56,18 @@
     </button>
     {#each glazewm.bindingModes as bindingMode, i}
       <div class="flex items-center">
-        <button class="pb-[4px]"
+        <button
+          class="pb-[4px]"
           onclick={() => {
             switch (bindingMode.name.toLowerCase()) {
               case "pause":
                 glazewm!.runCommand("wm-disable-binding-mode --name pause");
                 break;
-              
+
               case "resize":
                 glazewm!.runCommand("wm-disable-binding-mode --name resize");
                 break;
-            
+
               default:
                 break;
             }
