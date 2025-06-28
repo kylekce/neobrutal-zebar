@@ -42,6 +42,7 @@ export default {
             4: "hsl(var(--ws-5) / <alpha-value> )"
           },
           "tiling-direction": "hsl(var(--tiling-direction) / <alpha-value> )",
+          "add-workspace": "hsl(var(--add-workspace) / <alpha-value> )",
           spotify: {
             playing: "hsl(var(--now-playing) / <alpha-value> )",
             paused: "hsl(var(--not-playing) / <alpha-value> )"
