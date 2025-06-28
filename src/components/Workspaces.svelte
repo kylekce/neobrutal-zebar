@@ -37,6 +37,14 @@
           glazewm!.runCommand(`focus --workspace ${workspace.name}`)}
       />
     {/each}
+    <!-- Add workspace button -->
+    <button
+      aria-label="add-workspace"
+      class="text-zb-add-workspace"
+      onclick={() => glazewm!.runCommand("wm-add-workspace")}
+    >
+      <i class="ti ti-plus"></i>
+    </button>
     <button
       aria-label="tiling-direction"
       class="flex items-center justify-center text-zb-tiling-direction"
