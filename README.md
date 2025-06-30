@@ -12,6 +12,7 @@ A personal modified version of the Neobrutal Zebar configuration for Zebar, buil
 - System information meters, with shutdown and restart buttons.
 - Media display for browser and music player.
 - Animations like process focus, workspace switching, and marquee scrolling.
+- Dynamic coloring.
 - Configuration using CSS-variables.
 
 > [!IMPORTANT]
@@ -106,6 +107,8 @@ and Material. Below follows some examples.
 
 ### 🌷Rosé Pine (default)
 
+Utilizes [Rosé Pine Palette](https://rosepinetheme.com/palette), a soothing and elegant color scheme.
+
 <details>
 <summary>Example config</summary>
 
@@ -113,30 +116,36 @@ and Material. Below follows some examples.
 
 ```css
 /* colors */
---text: var(--rp-text);
---bg: var(--rp-overlay);
---border: var(--rp-highlight-low);
---shadow: var(--rp-highlight-low);
---icon: var(--rp-love);
---memory: var(--rp-iris);
---cpu: var(--rp-rose);
---cpu-high-usage: var(--rp-love);
---battery-good: var(--rp-pine);
---battery-mid: var(--rp-gold);
---battery-low: var(--rp-love);
---focused-process: var(--rp-text);
---process: var(--rp-muted);
---displayed: var(--rp-text);
---ws-1: var(--rp-gold);
---ws-2: var(--rp-love);
---ws-3: var(--rp-pine);
---ws-4: var(--rp-foam);
---ws-5: var(--rp-iris);
---tiling-direction: var(--rp-rose);
---not-playing: var(--rp-love);
---now-playing: var(--rp-pine);
---network: var(--rp-text);
---weather: var(--rp-text);
+  --text: var(--rp-text);
+  --bg: var(--rp-overlay);
+  --border: var(--rp-highlight-low);
+  --shadow: var(--rp-highlight-low);
+  --power: var(--rp-love);
+  --restart: var(--rp-foam);
+  --memory: var(--rp-iris);
+  --memory-medium: var(--rp-gold);
+  --memory-high: var(--rp-love);
+  --cpu: var(--rp-rose);
+  --cpu-high-usage: var(--rp-love);
+  --battery-good: var(--rp-pine);
+  --battery-mid: var(--rp-gold);
+  --battery-low: var(--rp-love);
+  --volume-muted: var(--rp-foam);
+  --volume-low: var(--rp-iris);
+  --volume-medium: var(--rp-pine);
+  --volume-high: var(--rp-rose);
+  --focused-process: var(--rp-text);
+  --process: var(--rp-muted);
+  --displayed: var(--rp-text);
+  --ws-1: var(--rp-gold);
+  --ws-2: var(--rp-love);
+  --ws-3: var(--rp-pine);
+  --ws-4: var(--rp-foam);
+  --ws-5: var(--rp-iris);
+  --tiling-direction: var(--rp-rose);
+  --add-workspace: var(--rp-foam);
+  --not-playing: var(--rp-love);
+  --now-playing: var(--rp-pine);
 ```
 
 </details>
@@ -145,135 +154,13 @@ and Material. Below follows some examples.
 
 Utilizes [Catppuccin Palette](https://github.com/catppuccin/palette/blob/main/docs/css.md), configure css variables accoriding to your liking.
 
-<details>
-<summary>Config show in one of the showcase above</summary>
-
-##### config.css
-
-```css
-/* border */
---radius: 9999px;
-
-/* shadow */
---shadow-size-bar: 0;
---shadow-size-button: 0;
-
-/* colors */
---text: var(--ctp-mocha-text);
---bg: var(--ctp-mocha-surface0);
---border: var(--ctp-mocha-crust);
---border-button: var(--ctp-mocha-crust);
---shadow: var(--ctp-mocha-mantle);
---icon: var(--ctp-mocha-red);
---memory: var(--ctp-mocha-mauve);
---cpu: var(--ctp-mocha-pink);
---cpu-high-usage: var(--ctp-mocha-red);
---battery-good: var(--ctp-mocha-green);
---battery-mid: var(--ctp-mocha-peach);
---battery-low: var(--ctp-mocha-red);
---focused-process: var(--ctp-mocha-text);
---process: var(--ctp-mocha-surface2);
---displayed: var(--ctp-mocha-text);
---ws-1: var(--ctp-mocha-peach);
---ws-2: var(--ctp-mocha-red);
---ws-3: var(--ctp-mocha-green);
---ws-4: var(--ctp-mocha-blue);
---ws-5: var(--ctp-mocha-mauve);
---tiling-direction: var(--ctp-mocha-lavender);
---not-playing: var(--ctp-mocha-red);
---now-playing: var(--ctp-mocha-green);
---network: var(--ctp-mocha-text);
---weather: var(--ctp-mocha-text);
-```
-
-##### src/components/LeftGroup.svelte
-
-```svelte
-<!-- replace this line -->
-<Button class="text-zb-icon" iconClass="heart-filled" />
-<!-- with this line -->
-<Button class="text-zb-icon" iconClass="cat" />
-```
-
-</details>
-
 ### ❄️ Nord
 
 Utilizes [Nord Theme](https://www.nordtheme.com/) color palette, providing a cool arctic aesthetic.
 
-<details>
-<summary>Example Nord config</summary>
-
-##### config.css
-
-```css
-/* colors */
---text: hsl(var(--nord6));
---bg: hsl(var(--nord0));
---border: hsl(var(--nord3));
---shadow: hsl(var(--nord1));
---icon: hsl(var(--nord7));
---memory: hsl(var(--nord15));
---cpu: hsl(var(--nord8));
---cpu-high-usage: hsl(var(--nord11));
---battery-good: hsl(var(--nord14));
---battery-mid: hsl(var(--nord13));
---battery-low: hsl(var(--nord11));
---focused-process: hsl(var(--nord6));
---process: hsl(var(--nord3));
---displayed: hsl(var(--nord6));
---ws-1: hsl(var(--nord13));
---ws-2: hsl(var(--nord11));
---ws-3: hsl(var(--nord14));
---ws-4: hsl(var(--nord7));
---ws-5: hsl(var(--nord15));
---tiling-direction: hsl(var(--nord8));
---not-playing: hsl(var(--nord11));
---now-playing: hsl(var(--nord14));
---network: hsl(var(--nord6));
---weather: hsl(var(--nord6));
-```
-
-</details>
-
 ### 🎨 Material Design
 
 Based on [Material Design Color System](https://m2.material.io/design/color/), offering vibrant and accessible colors.
-
-<details>
-<summary>Example Material config</summary>
-
-##### config.css
-
-```css
-/* colors */
---text: hsl(var(--md-grey-900));
---bg: hsl(var(--md-grey-50));
---border: hsl(var(--md-grey-300));
---shadow: hsl(var(--md-grey-200));
---icon: hsl(var(--md-blue-600));
---memory: hsl(var(--md-purple-500));
---cpu: hsl(var(--md-pink-500));
---cpu-high-usage: hsl(var(--md-red-500));
---battery-good: hsl(var(--md-green-500));
---battery-mid: hsl(var(--md-orange-500));
---battery-low: hsl(var(--md-red-500));
---focused-process: hsl(var(--md-grey-900));
---process: hsl(var(--md-grey-400));
---displayed: hsl(var(--md-grey-900));
---ws-1: hsl(var(--md-orange-500));
---ws-2: hsl(var(--md-red-500));
---ws-3: hsl(var(--md-green-500));
---ws-4: hsl(var(--md-blue-500));
---ws-5: hsl(var(--md-purple-500));
---tiling-direction: hsl(var(--md-indigo-500));
---not-playing: hsl(var(--md-red-500));
---now-playing: hsl(var(--md-green-500));
---network: hsl(var(--md-grey-900));
---weather: hsl(var(--md-grey-900));
-```
-
-</details>
 
 ## 🍳 Recipies
 

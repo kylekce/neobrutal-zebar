@@ -2,6 +2,7 @@
   import type { GlazeWmOutput, MediaOutput } from "zebar";
 
   import Group from "../components/Group.svelte";
+  import Button from "./Button.svelte";
 
   type RightGroupProps = {
     glazewm: GlazeWmOutput;
@@ -15,11 +16,15 @@
 {#if media && media.currentSession}
   <Group class="shrink-0">
     <div class="flex items-center gap-1">
-      {#if media.currentSession.isPlaying}
-        <i class="ti ti-player-play"></i>
-      {:else}
-        <i class="ti ti-player-pause"></i>
-      {/if}
+      <Button
+        iconClass={media.currentSession.isPlaying
+          ? "ti ti-player-play text-zb-media-playing"
+          : "ti ti-player-pause text-zb-media-paused"}
+        class="text-zb-media"
+        noBg={true}
+        callback={() =>
+          media.togglePlayPause({ sessionId: media.currentSession!.sessionId })}
+      ></Button>
       <div class="max-w-xs overflow-hidden group">
         <div class="inline-block whitespace-nowrap group-hover:animate-marquee">
           <span>

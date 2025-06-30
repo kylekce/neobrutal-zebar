@@ -22,13 +22,20 @@
   --bg: var(--rp-overlay);
   --border: var(--rp-highlight-low);
   --shadow: var(--rp-highlight-low);
-  --icon: var(--rp-love);
+  --power: var(--rp-love);
+  --restart: var(--rp-foam);
   --memory: var(--rp-iris);
+  --memory-medium: var(--rp-gold);
+  --memory-high: var(--rp-love);
   --cpu: var(--rp-rose);
   --cpu-high-usage: var(--rp-love);
   --battery-good: var(--rp-pine);
   --battery-mid: var(--rp-gold);
   --battery-low: var(--rp-love);
+  --volume-muted: var(--rp-foam);
+  --volume-low: var(--rp-iris);
+  --volume-medium: var(--rp-pine);
+  --volume-high: var(--rp-rose);
   --focused-process: var(--rp-text);
   --process: var(--rp-muted);
   --displayed: var(--rp-text);
@@ -38,8 +45,7 @@
   --ws-4: var(--rp-foam);
   --ws-5: var(--rp-iris);
   --tiling-direction: var(--rp-rose);
+  --add-workspace: var(--rp-foam);
   --not-playing: var(--rp-love);
   --now-playing: var(--rp-pine);
-  --network: var(--rp-text);
-  --weather: var(--rp-text);
 }
